@@ -15,6 +15,7 @@ class ItemsController < ApplicationController
 		@items.save
 		@address = Address.new(address_params)
 		@address.save
+		redirect_to @items
     end
 	##########################
 	def show

@@ -33,14 +33,4 @@ ActiveRecord::Schema.define(version: 20140218134131) do
     t.datetime "updated_at"
   end
 
-  create_table "standards", force: true do |t|
-    t.string   "listingtype"
-    t.integer  "price"
-    t.string   "purpose"
-    t.integer  "area"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end

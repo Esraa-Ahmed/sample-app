@@ -6716,3 +6716,441 @@ ActiveRecord::RecordNotFound (Couldn't find Address with id=14):
   Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
   Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
   Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/items/14" for 127.0.0.1 at 2014-02-19 13:08:30 +0200
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "14"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Address with id=14):
+  app/controllers/items_controller.rb:22:in `show'
+
+
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/items/14" for 127.0.0.1 at 2014-02-19 13:08:32 +0200
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mAddress Load (0.0ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "14"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Address with id=14):
+  app/controllers/items_controller.rb:22:in `show'
+
+
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/items/1" for 127.0.0.1 at 2014-02-19 13:08:35 +0200
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered items/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 13:08:35 +0200
+
+
+Started GET "/assets/cd.css?body=1" for 127.0.0.1 at 2014-02-19 13:08:35 +0200
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-19 13:08:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 13:08:35 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 13:08:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 13:08:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 13:08:35 +0200
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-19 13:08:35 +0200
+
+
+Started GET "/assets/cd.js?body=1" for 127.0.0.1 at 2014-02-19 13:08:35 +0200
+
+
+Started GET "/items/6" for 127.0.0.1 at 2014-02-19 13:08:44 +0200
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "6"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Address with id=6):
+  app/controllers/items_controller.rb:22:in `show'
+
+
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+  [1m[36m (135.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (116.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (5.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAddresses (20140218130812)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "country" varchar(255), "city" varchar(255), "community" varchar(255), "subcommunity" varchar(255), "subtype" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140218130812"]]
+  [1m[36m (138.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateItems (20140218134131)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "listingtype" varchar(255), "price" integer, "purpose" varchar(255), "area" integer, "description" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140218134131"]]
+  [1m[36m (131.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mItem Load (0.9ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses"
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-19 14:22:42 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2014-02-19 14:22:46 +0200
+Processing by ItemsController#new as HTML
+  Rendered items/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 14:22:46 +0200
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-19 14:22:46 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 14:22:46 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 14:22:46 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 14:22:46 +0200
+
+
+Started GET "/assets/cd.css?body=1" for 127.0.0.1 at 2014-02-19 14:22:46 +0200
+
+
+Started GET "/assets/cd.js?body=1" for 127.0.0.1 at 2014-02-19 14:22:46 +0200
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-19 14:22:46 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 14:22:46 +0200
+
+
+Started POST "/items" for 127.0.0.1 at 2014-02-19 14:23:41 +0200
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kqmv3jT/7b2nR0g3eg5OPjFmNeLxz8u9xtnK1nKmyx4=", "item"=>{"listingtype"=>"Apartment", "price"=>"120", "purpose"=>"Rent", "area"=>"32", "description"=>"asdasasfsdcsd"}, "address"=>{"country"=>"egypt", "city"=>"mansoura", "community"=>"7ay el gam3a", "subcommunity"=>"montaser", "subtype"=>"rakm 12"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "items" ("area", "created_at", "description", "listingtype", "price", "purpose", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["area", 32], ["created_at", Wed, 19 Feb 2014 12:23:41 UTC +00:00], ["description", "asdasasfsdcsd"], ["listingtype", "Apartment"], ["price", 120], ["purpose", "Rent"], ["updated_at", Wed, 19 Feb 2014 12:23:41 UTC +00:00]]
+  [1m[35m (284.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("city", "community", "country", "created_at", "subcommunity", "subtype", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "mansoura"], ["community", "7ay el gam3a"], ["country", "egypt"], ["created_at", Wed, 19 Feb 2014 12:23:41 UTC +00:00], ["subcommunity", "montaser"], ["subtype", "rakm 12"], ["updated_at", Wed, 19 Feb 2014 12:23:41 UTC +00:00]]
+  [1m[36m (139.5ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 431ms
+
+ActionView::MissingTemplate (Missing template items/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/nuran/workspace/Task/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/nuran/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__3427660518063345772__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__4561609485924666341__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nuran/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nuran/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nuran/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2014-02-19 14:24:54 +0200
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kqmv3jT/7b2nR0g3eg5OPjFmNeLxz8u9xtnK1nKmyx4=", "item"=>{"listingtype"=>"Apartment", "price"=>"120", "purpose"=>"Rent", "area"=>"32", "description"=>"asdasasfsdcsd"}, "address"=>{"country"=>"egypt", "city"=>"mansoura", "community"=>"7ay el gam3a", "subcommunity"=>"montaser", "subtype"=>"rakm 12"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("area", "created_at", "description", "listingtype", "price", "purpose", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["area", 32], ["created_at", Wed, 19 Feb 2014 12:24:54 UTC +00:00], ["description", "asdasasfsdcsd"], ["listingtype", "Apartment"], ["price", 120], ["purpose", "Rent"], ["updated_at", Wed, 19 Feb 2014 12:24:54 UTC +00:00]]
+  [1m[35m (176.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("city", "community", "country", "created_at", "subcommunity", "subtype", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "mansoura"], ["community", "7ay el gam3a"], ["country", "egypt"], ["created_at", Wed, 19 Feb 2014 12:24:54 UTC +00:00], ["subcommunity", "montaser"], ["subtype", "rakm 12"], ["updated_at", Wed, 19 Feb 2014 12:24:54 UTC +00:00]]
+  [1m[36m (141.6ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 338ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/items_controller.rb:18:in `create'
+
+
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2014-02-19 14:25:56 +0200
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kqmv3jT/7b2nR0g3eg5OPjFmNeLxz8u9xtnK1nKmyx4=", "item"=>{"listingtype"=>"Apartment", "price"=>"120", "purpose"=>"Rent", "area"=>"32", "description"=>"asdasasfsdcsd"}, "address"=>{"country"=>"egypt", "city"=>"mansoura", "community"=>"7ay el gam3a", "subcommunity"=>"montaser", "subtype"=>"rakm 12"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "items" ("area", "created_at", "description", "listingtype", "price", "purpose", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["area", 32], ["created_at", Wed, 19 Feb 2014 12:25:56 UTC +00:00], ["description", "asdasasfsdcsd"], ["listingtype", "Apartment"], ["price", 120], ["purpose", "Rent"], ["updated_at", Wed, 19 Feb 2014 12:25:56 UTC +00:00]]
+  [1m[35m (163.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("city", "community", "country", "created_at", "subcommunity", "subtype", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "mansoura"], ["community", "7ay el gam3a"], ["country", "egypt"], ["created_at", Wed, 19 Feb 2014 12:25:56 UTC +00:00], ["subcommunity", "montaser"], ["subtype", "rakm 12"], ["updated_at", Wed, 19 Feb 2014 12:25:56 UTC +00:00]]
+  [1m[36m (133.1ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 319ms
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"items"}):
+  app/controllers/items_controller.rb:18:in `create'
+
+
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2014-02-19 14:25:59 +0200
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kqmv3jT/7b2nR0g3eg5OPjFmNeLxz8u9xtnK1nKmyx4=", "item"=>{"listingtype"=>"Apartment", "price"=>"120", "purpose"=>"Rent", "area"=>"32", "description"=>"asdasasfsdcsd"}, "address"=>{"country"=>"egypt", "city"=>"mansoura", "community"=>"7ay el gam3a", "subcommunity"=>"montaser", "subtype"=>"rakm 12"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "items" ("area", "created_at", "description", "listingtype", "price", "purpose", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["area", 32], ["created_at", Wed, 19 Feb 2014 12:25:59 UTC +00:00], ["description", "asdasasfsdcsd"], ["listingtype", "Apartment"], ["price", 120], ["purpose", "Rent"], ["updated_at", Wed, 19 Feb 2014 12:25:59 UTC +00:00]]
+  [1m[35m (155.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "addresses" ("city", "community", "country", "created_at", "subcommunity", "subtype", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "mansoura"], ["community", "7ay el gam3a"], ["country", "egypt"], ["created_at", Wed, 19 Feb 2014 12:25:59 UTC +00:00], ["subcommunity", "montaser"], ["subtype", "rakm 12"], ["updated_at", Wed, 19 Feb 2014 12:25:59 UTC +00:00]]
+  [1m[36m (148.7ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 310ms
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"items"}):
+  app/controllers/items_controller.rb:18:in `create'
+
+
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/nuran/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2014-02-19 14:26:58 +0200
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kqmv3jT/7b2nR0g3eg5OPjFmNeLxz8u9xtnK1nKmyx4=", "item"=>{"listingtype"=>"Apartment", "price"=>"120", "purpose"=>"Rent", "area"=>"32", "description"=>"asdasasfsdcsd"}, "address"=>{"country"=>"egypt", "city"=>"mansoura", "community"=>"7ay el gam3a", "subcommunity"=>"montaser", "subtype"=>"rakm 12"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "items" ("area", "created_at", "description", "listingtype", "price", "purpose", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["area", 32], ["created_at", Wed, 19 Feb 2014 12:26:58 UTC +00:00], ["description", "asdasasfsdcsd"], ["listingtype", "Apartment"], ["price", 120], ["purpose", "Rent"], ["updated_at", Wed, 19 Feb 2014 12:26:58 UTC +00:00]]
+  [1m[35m (158.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("city", "community", "country", "created_at", "subcommunity", "subtype", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "mansoura"], ["community", "7ay el gam3a"], ["country", "egypt"], ["created_at", Wed, 19 Feb 2014 12:26:58 UTC +00:00], ["subcommunity", "montaser"], ["subtype", "rakm 12"], ["updated_at", Wed, 19 Feb 2014 12:26:58 UTC +00:00]]
+  [1m[36m (149.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/items/5
+Completed 302 Found in 329ms (ActiveRecord: 310.1ms)
+
+
+Started GET "/items/5" for 127.0.0.1 at 2014-02-19 14:26:59 +0200
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered items/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 14:26:59 +0200
+
+
+Started GET "/assets/cd.css?body=1" for 127.0.0.1 at 2014-02-19 14:26:59 +0200
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-19 14:26:59 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 14:26:59 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 14:26:59 +0200
+
+
+Started GET "/assets/cd.js?body=1" for 127.0.0.1 at 2014-02-19 14:26:59 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 14:26:59 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 14:26:59 +0200
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-19 14:26:59 +0200
+
+
+Started GET "/items/5" for 127.0.0.1 at 2014-02-19 14:29:58 +0200
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered items/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 14:29:58 +0200
+
+
+Started GET "/assets/cd.css?body=1" for 127.0.0.1 at 2014-02-19 14:29:58 +0200
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-19 14:29:58 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 14:29:58 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 14:29:58 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 14:29:58 +0200
+
+
+Started GET "/assets/cd.js?body=1" for 127.0.0.1 at 2014-02-19 14:29:58 +0200
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-19 14:29:58 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 14:29:59 +0200
+
+
+Started GET "/items/5" for 127.0.0.1 at 2014-02-19 14:31:54 +0200
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered items/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 14:31:54 +0200
+
+
+Started GET "/assets/cd.css?body=1" for 127.0.0.1 at 2014-02-19 14:31:54 +0200
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-19 14:31:54 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 14:31:54 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 14:31:54 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 14:31:54 +0200
+
+
+Started GET "/assets/cd.js?body=1" for 127.0.0.1 at 2014-02-19 14:31:54 +0200
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-19 14:31:54 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 14:31:54 +0200
